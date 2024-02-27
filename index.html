@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickConvert- Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .container {
+            min-height: 100vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .container h1,
+        h2 {
+            margin: 23px 0;
+            text-align: center;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container form input[type='number'],
+        select,
+        label {
+            font-size: 20px;
+            margin-bottom: 15px;
+            width: 70%;
+            padding: 10px;
+            border: 2px solid rgba(149, 28, 255, 0.756);
+            border-radius: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container form label {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            width: 120px;
+            padding: 8px 12px;
+            font-size: 18px;
+            background-color: rgba(149, 28, 255, 0.756);
+            color: white;
+            border-radius: 13px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(149, 28, 255);
+        }
+
+        .output table {
+            width: 100%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            border: 2px solid rgba(149, 28, 255, 0.756);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .output table th,
+        .output table td {
+            padding: 15px;
+            border: 1px solid rgba(149, 28, 255, 0.756);
+        }
+
+        .output table th {
+            background-color: rgba(149, 28, 255, 0.756);
+            color: white;
+        }
+
+        .output table td {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(149, 28, 255, 0.756);
+            color: white;
+            font-weight: bold;
+        }
+
+        nav {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 900;
+            display: flex;
+            font-size: 20px;
+            background-color: rgba(149, 28, 255, 0.756);
+            color: #fff;
+            padding: 5px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            padding: 23px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #fff;
+            transition: all;
+            transition-duration: 500ms;
+        }
+
+        nav li a:hover {
+            text-decoration: none;
+            color: rgb(0, 0, 0)
+        }
+
+        div.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                font-size: 14px;
+            }
+
+            nav ul li {
+                margin: 5px 13px;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            .container {
+                max-width: 95vw;
+            }
+
+            .container form input[type='number'],
+            select,
+            label {
+                font-size: 20px;
+                width: 80vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation content goes here -->
+    <nav>
+        <div class="logo">QuickConvert</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">About</a></li>
+            <li><a href="history.html">History of Currencies</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content goes here -->
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="#" method="get">
+            <label for="quantity">Choose a quantity: </label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency">Choose a currency: </label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="output">
+            <table>
+                <h2>Your Converted Currency Values Will Display Below</h2>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer content goes here -->
+    <footer>
+        Copyright &copy; All rights are reserved
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

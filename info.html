@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickConvert - About</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .container {
+            background-color: white;
+            min-height: 100vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 90%;
+            margin: 2vw auto;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: larger;
+        }
+
+        .container h1,
+        h2 {
+            margin: 23px 0;
+            text-align: center;
+            background-color: rgba(149, 28, 255, 0.2);
+            border-radius: 8px;
+            padding: 10px;
+            font-size: larger;
+
+        }
+
+        .container h2 {
+            background-color: rgba(149, 28, 255, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .container p {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(149, 28, 255, 0.756);
+            color: white;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        nav {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 900;
+            display: flex;
+            font-size: 20px;
+            background-color: rgba(149, 28, 255, 0.756);
+            color: #fff;
+            padding: 5px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            padding: 23px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #fff;
+            transition: all;
+            transition-duration: 500ms;
+        }
+
+        nav li a:hover {
+            text-decoration: none;
+            color: rgb(0, 0, 0)
+        }
+
+        div.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                font-size: 14px;
+            }
+
+            nav ul li {
+                margin: 5px 13px;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .container h1,
+            h2,
+            p {
+                text-align: left;
+            }
+
+            .container h2 {
+                background-color: transparent;
+                padding: 0;
+                border-radius: 0;
+            }
+
+            .container p {
+                margin-bottom: 10px;
+            }
+
+            .container form input[type='number'],
+            select,
+            label {
+                font-size: 20px;
+                width: 80vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">QuickConvert</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">About Us</a></li>
+            <li><a href="history.html">History of Currencies</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>About Our Currency Converter</h1>
+
+        <p>Hey there! Welcome to our currency converter – your go-to tool for hassle-free money exchange. We get it,
+            dealing with different currencies can be a bit of a head-scratcher, whether you're jet-setting, shopping
+            online, or running a global business. That's where we come in, making your financial life a whole lot
+            simpler.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is pretty simple: make your life easier when it comes to dealing with money from all corners of
+            the globe. We know currency stuff can be confusing, so we're here to give you a user-friendly and reliable
+            way to handle it all. Our aim is to help you make informed decisions and navigate your transactions like a
+            pro.</p>
+
+        <h2>Key Features</h2>
+        <p>Real-Time Exchange Rates: We keep it real with up-to-the-minute exchange rates from trustworthy sources. No
+            outdated info here!</p>
+        <p>Wide Range of Currencies: From the big players like the US Dollar to the more exotic ones, we've got a
+            massive list of currencies to cover all your conversion needs.</p>
+    </div>
+
+    <footer>
+        Copyright &copy; All rights are reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
