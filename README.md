@@ -1,4 +1,4 @@
-# Currency Conversion Web Application: https://sahilnandivkar.github.io/Quick-Convert/
+# Currency Conversion Web Application
 
 A simple and efficient Currency Conversion Web Application built for easy conversion between different currencies.
 
